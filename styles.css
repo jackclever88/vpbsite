@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* 1. Reset básico para remover margens e garantir consistência */
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  box-sizing: border-box; /* Faz o tamanho incluir bordas e preenchimento */
+}
+
+/* 2. Configuração do body para centralizar o conteúdo */
+body {
+  display: flex; /* Usa flexbox para alinhar */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  min-height: 100vh; /* Garante que o body ocupe a tela inteira */
+  background: #f5f5f5; /* Cor de fundo cinza claro */
+  font-family: 'EB Garamond', serif; /* Define a fonte EB Garamond */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* 3. Container que limita a largura e centraliza o texto */
+.container {
+  width: 90%; /* Largura máxima de 90% da tela */
+  max-width: 600px; /* Limita a largura a 600px */
+  padding: 20px; /* Adiciona espaço interno */
+}
+
+/* 4. Bloco principal que contém os dois grupos de texto */
+.hero {
+  margin-bottom: 2rem; /* Espaço abaixo do bloco principal para separar do "More About" */
+}
+
+/* 5. Agrupamento de cada par (link + subtexto) */
+.text-block {
+  display: block; /* Cada bloco ocupa uma linha inteira */
+  margin-bottom: 0.5rem; /* Espaço entre os blocos de texto */
+}
+
+/* 6. Estilo dos links (PRODUCTIVITY, PHILOSOPHY, Vinícius P. Breves) */
+.link {
+  color: #0f163c; /* Cor azul escura */
+  text-decoration: none; /* Remove sublinhado dos links */
+  font-weight: 700; /* Negrito para destacar os links principais */
+  font-style: italic; /* Estilo itálico */
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Alteração: tamanho reduzido para evitar quebras de linha e ficar elegante */
+  display: block; /* Cada link fica em uma linha própria */
+}
+
+/* 7. Estilo do subtexto (for Brilliant People, for the Last Thinking Minds) */
+.subtext {
+  display: inline; /* Alteração: mudou de block para inline para manter "&" na mesma linha */
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Alteração: tamanho reduzido para evitar quebras e ficar legível */
+  font-weight: 400; /* Sem negrito */
+  font-style: italic; /* Estilo itálico */
+  color: #a69665; /* Cor dourada */
+}
+
+/* 8. Estilo do símbolo "&" */
+.amp {
+  display: inline; /* Alteração: mudou de block para inline para ficar na mesma linha do subtexto */
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Alteração: tamanho reduzido para consistência */
+  color: #0f163c; /* Cor azul escura, igual aos links */
+  font-weight: 700; /* Negrito para destacar o "&" */
+  margin: 0 0.25rem; /* Alteração: margem reduzida para espaçamento sutil, sem pular linha */
+}
+
+/* 9. Bloco "More About" */
+.more-about {
+  margin-top: 2rem; /* Espaço acima para separar do bloco principal */
+}
+
+/* 10. Estilo do rótulo "More About" */
+.label {
+  display: block; /* Ocupa uma linha inteira */
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Alteração: tamanho reduzido para consistência */
+  font-weight: 400; /* Sem negrito */
+  font-style: italic; /* Estilo itálico */
+  color: #a69665; /* Cor dourada */
+  margin-bottom: 0.5rem; /* Espaço abaixo do rótulo */
+}
+
+/* 11. Estilo específico para o nome "Vinícius P. Breves" */
+.name {
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Alteração: tamanho reduzido para consistência */
+  font-style: italic; /* Estilo itálico */
+  color: #0f163c; /* Cor azul escura */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: 400; /* Sem negrito */
+}
+
+/* 12. Efeito hover para todos os links */
+.link:hover, .name:hover {
+  color: #665625; /* Cor ao passar o mouse */
+}
